@@ -45,7 +45,7 @@ public class Simulator : MonoBehaviour
         while(feed > 0)
         {
             Debug.Log($"현재 FEED : {feed}");
-            yield return delay;
+            yield return new WaitForSecondsRealtime(60f);
             feed -= decFeed;
         }
     }
@@ -55,7 +55,7 @@ public class Simulator : MonoBehaviour
         while(clean > 0)
         {
             Debug.Log($"현재 CLEAN : {clean}");
-            yield return delay;
+            yield return new WaitForSecondsRealtime(60f);
             clean -= decClean;
         }
     }
@@ -65,7 +65,7 @@ public class Simulator : MonoBehaviour
         while(size < 100)
         {
             Debug.Log($"현재 SIZE : {size}");
-            yield return delay;
+            yield return new WaitForSecondsRealtime(60f);
             size += incSize;
         }
     }
