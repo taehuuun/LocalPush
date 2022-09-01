@@ -8312,36 +8312,36 @@ struct U3CU3Ec_t80B6683AAAB4630C59B9DFFE0E9F75D83C41E8D8_StaticFields
 	Func_2_t81FDA22D7A8FEABC505EE06A25CA75202D9D08FF* ___U3CU3E9__1_0_1;
 };
 
-// Simulator/<DecClean>d__14
-struct U3CDecCleanU3Ed__14_t00ED7A1F4DCE870FE7B268694424F9F476EC0468  : public RuntimeObject
+// Simulator/<DecClean>d__15
+struct U3CDecCleanU3Ed__15_t3A9E39B74C9C205343F6D619BAFD02A1754C33C1  : public RuntimeObject
 {
-	// System.Int32 Simulator/<DecClean>d__14::<>1__state
+	// System.Int32 Simulator/<DecClean>d__15::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Simulator/<DecClean>d__14::<>2__current
+	// System.Object Simulator/<DecClean>d__15::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Simulator Simulator/<DecClean>d__14::<>4__this
+	// Simulator Simulator/<DecClean>d__15::<>4__this
 	Simulator_tE270AC08E2C18FF648997FA52799E5F3A0D1F859* ___U3CU3E4__this_2;
 };
 
-// Simulator/<DecFood>d__13
-struct U3CDecFoodU3Ed__13_t95CFCCBD784D3F051A572C0397B6843CB9828E3B  : public RuntimeObject
+// Simulator/<DecFood>d__14
+struct U3CDecFoodU3Ed__14_tEC5B7C4A5160750D2D69DDDA8D1BB642ABEA56A8  : public RuntimeObject
 {
-	// System.Int32 Simulator/<DecFood>d__13::<>1__state
+	// System.Int32 Simulator/<DecFood>d__14::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Simulator/<DecFood>d__13::<>2__current
+	// System.Object Simulator/<DecFood>d__14::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Simulator Simulator/<DecFood>d__13::<>4__this
+	// Simulator Simulator/<DecFood>d__14::<>4__this
 	Simulator_tE270AC08E2C18FF648997FA52799E5F3A0D1F859* ___U3CU3E4__this_2;
 };
 
-// Simulator/<IncSize>d__15
-struct U3CIncSizeU3Ed__15_t23C868AA03286C4519B22FC6FB66DC82220AFA7F  : public RuntimeObject
+// Simulator/<IncSize>d__16
+struct U3CIncSizeU3Ed__16_tAAE44F0295BB460275EDD036A4502BE990D23F56  : public RuntimeObject
 {
-	// System.Int32 Simulator/<IncSize>d__15::<>1__state
+	// System.Int32 Simulator/<IncSize>d__16::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Simulator/<IncSize>d__15::<>2__current
+	// System.Object Simulator/<IncSize>d__16::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Simulator Simulator/<IncSize>d__15::<>4__this
+	// Simulator Simulator/<IncSize>d__16::<>4__this
 	Simulator_tE270AC08E2C18FF648997FA52799E5F3A0D1F859* ___U3CU3E4__this_2;
 };
 
@@ -22706,12 +22706,12 @@ struct SignaturePointerType_tE19F5E5E18FEB4FD302B62743DCCD3D5414A73DE  : public 
 // Simulator
 struct Simulator_tE270AC08E2C18FF648997FA52799E5F3A0D1F859  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.Single Simulator::maxFeedDay
-	float ___maxFeedDay_4;
-	// System.Single Simulator::maxCleanDay
-	float ___maxCleanDay_5;
-	// System.Single Simulator::maxSizeDay
-	float ___maxSizeDay_6;
+	// System.Single Simulator::maxFeedHour
+	float ___maxFeedHour_4;
+	// System.Single Simulator::maxCleanHour
+	float ___maxCleanHour_5;
+	// System.Single Simulator::maxSizeHour
+	float ___maxSizeHour_6;
 	// System.Single Simulator::feed
 	float ___feed_7;
 	// System.Single Simulator::decFeed
@@ -26624,11 +26624,11 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize1934 = { sizeof(U3CModuleU3E
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1935;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize1935 = { sizeof(LocalPush_tFDC9525E4CCD19C9471562FC6A66541C39952435), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1936;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1936 = { sizeof(U3CDecFoodU3Ed__13_t95CFCCBD784D3F051A572C0397B6843CB9828E3B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1936 = { sizeof(U3CDecFoodU3Ed__14_tEC5B7C4A5160750D2D69DDDA8D1BB642ABEA56A8), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1937;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1937 = { sizeof(U3CDecCleanU3Ed__14_t00ED7A1F4DCE870FE7B268694424F9F476EC0468), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1937 = { sizeof(U3CDecCleanU3Ed__15_t3A9E39B74C9C205343F6D619BAFD02A1754C33C1), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1938;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1938 = { sizeof(U3CIncSizeU3Ed__15_t23C868AA03286C4519B22FC6FB66DC82220AFA7F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1938 = { sizeof(U3CIncSizeU3Ed__16_tAAE44F0295BB460275EDD036A4502BE990D23F56), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1939;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize1939 = { sizeof(Simulator_tE270AC08E2C18FF648997FA52799E5F3A0D1F859), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1940;
