@@ -274,4 +274,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   simulator: {fileID: 2125455061}
-  channderID: TEST_CHANNEL
+  channderID: Test

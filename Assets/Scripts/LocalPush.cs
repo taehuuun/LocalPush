@@ -6,7 +6,7 @@ using Unity.Notifications.Android;
 public class LocalPush : MonoBehaviour
 {
     [SerializeField] private Simulator simulator;
-    [SerializeField] private string channderID = "TEST_CHANNEL";
+    [SerializeField] private string channderID = "LIFE";
 
     private void Start()
     {
@@ -38,7 +38,7 @@ public class LocalPush : MonoBehaviour
     {
         var channel = new AndroidNotificationChannel()
         {
-            Id = "Test",
+            Id = "LIFE",
             Name = "Test Channel",
             Importance = Importance.Default,
             Description = "Generic notifications",
@@ -50,12 +50,12 @@ public class LocalPush : MonoBehaviour
     private void SendNotification()
     {
         var notification = new AndroidNotification();
-        notification.Title = "TEST TITLE";
-        notification.Text = "TEST TEXT";
-        notification.FireTime = System.DateTime.Now.AddMinutes(1);
+        notification.Title = "생명력 10% 미만!";
+        notification.Text = "생명력이 10% 미만입니다";
+        notification.FireTime = System.DateTime.Now.AddSeconds(20);
 
-        notification.SmallIcon = "app_icon_id";
-        notification.LargeIcon = "app_large_icon_id";
+        // notification.SmallIcon = "app_icon_id";
+        // notification.LargeIcon = "app_large_icon_id";
 
         notification.IntentData = "{\"title\":\"Notification:1\",\"data\":\"200\"}";
 

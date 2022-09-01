@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Simulator : MonoBehaviour
 {
-    [SerializeField] private float maxFeedDay = 1;
-    [SerializeField] private float maxCleanDay = 0.5f;
-    [SerializeField] private float maxSizeDay = 15f;
+    [SerializeField] private float maxFeedHour = 1;
+    [SerializeField] private float maxCleanHour = 12f;
+    [SerializeField] private float maxSizeHour = 360f;
 
     [SerializeField] private float feed = 100f;
     [SerializeField] private float decFeed;
@@ -15,7 +15,7 @@ public class Simulator : MonoBehaviour
     [SerializeField] private float size = 20f;    
     [SerializeField] private float incSize;
 
-    private const int DAY2MIN = 1440;
+    private const int HOUR2SEC = 3600;
 
     private void Start()
     {
@@ -23,13 +23,18 @@ public class Simulator : MonoBehaviour
         StartSimulator();
     }
 
+    private void OnApplicationQuit()
+    {
+
+    }
+
     // max일에 따른 분당 감소값 계산
     private void SettingValue()
     {
-        // dec = (퍼센트) / (맥스 데이 * 1440 (24 * 60))
-        decFeed = 100 / (maxFeedDay * DAY2MIN);
-        decClean = 100 / (maxCleanDay * DAY2MIN);
-        incSize = 80 / (maxSizeDay * DAY2MIN);
+        // dec = (퍼센트) / (맥스 데이 * 1440 (24 * 60 * 60))
+        decFeed = 100 / (maxFeedHour * HOUR2SEC);
+        decClean = 100 / (maxCleanHour * HOUR2SEC);
+        incSize = 80 / (maxSizeHour * HOUR2SEC);
     }
 
     private void StartSimulator()
@@ -44,7 +49,7 @@ public class Simulator : MonoBehaviour
         while(feed > 0)
         {
             Debug.Log($"현재 FEED : {feed}");
-            yield return new WaitForSecondsRealtime(60f);
+            yield return new WaitForSecondsRealtime(1f);
             feed -= decFeed;
         }
     }
@@ -54,7 +59,7 @@ public class Simulator : MonoBehaviour
         while(clean > 0)
         {
             Debug.Log($"현재 CLEAN : {clean}");
-            yield return new WaitForSecondsRealtime(60f);
+            yield return new WaitForSecondsRealtime(1f);
             clean -= decClean;
         }
     }
@@ -64,7 +69,7 @@ public class Simulator : MonoBehaviour
         while(size < 100)
         {
             Debug.Log($"현재 SIZE : {size}");
-            yield return new WaitForSecondsRealtime(60f);
+            yield return new WaitForSecondsRealtime(1f);
             size += incSize;
         }
     }
