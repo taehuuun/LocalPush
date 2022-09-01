@@ -16,7 +16,6 @@ public class Simulator : MonoBehaviour
     [SerializeField] private float incSize;
 
     private const int DAY2MIN = 1440;
-    private WaitForSecondsRealtime delay = new WaitForSecondsRealtime(60f);
 
     private void Start()
     {
