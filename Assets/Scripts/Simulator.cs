@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Simulator : MonoBehaviour
 {
-    [SerializeField] private int maxFeedDay = 1;
-    [SerializeField] private int maxCleanDay = 0;
-    [SerializeField] private int maxSizeDay = 0;
+    [SerializeField] private float maxFeedDay = 1;
+    [SerializeField] private float maxCleanDay = 0.5f;
+    [SerializeField] private float maxSizeDay = 15f;
 
     [SerializeField] private float feed = 100f;
     [SerializeField] private float decFeed;
