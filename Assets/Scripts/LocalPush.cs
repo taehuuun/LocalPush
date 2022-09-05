@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Notifications.Android;
 
+using NotificationServices = UnityEngine.iOS.NotificationServices;
+using NOtificationType = UnityEngine.iOS.NotificationType;
+using LocalNotification = UnityEngine.iOS.LocalNotification;
+
 public class LocalPush : MonoBehaviour
 {
     [SerializeField] private Simulator simulator;
