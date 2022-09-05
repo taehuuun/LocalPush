@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.iOS.Notification;
+using Unity.Notifications.iOS;
 
 public class LocalPush_IOS : MonoBehaviour
 {
@@ -28,6 +28,8 @@ public class LocalPush_IOS : MonoBehaviour
             res += "\n deviceToken:  " + req.DeviceToken;
             Debug.Log(res);
         }
+
+        SendNotification();
     }
 
     private void SendNotification()
