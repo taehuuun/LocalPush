@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 2125455062}
   - component: {fileID: 2125455061}
   - component: {fileID: 2125455063}
+  - component: {fileID: 2125455064}
   m_Layer: 0
   m_Name: Simulator
   m_TagString: Untagged
@@ -237,9 +238,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f0f3aa26c6a104bb76abdf8b3b8281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFeedDay: 1
-  maxCleanDay: 0.5
-  maxSizeDay: 15
+  maxFeedHour: 1
+  maxCleanHour: 12
+  maxSizeHour: 360
   feed: 100
   decFeed: 0
   clean: 100
@@ -268,10 +269,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125455060}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27729f6bf7b170243b388ecfd333d7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   simulator: {fileID: 2125455061}
   channderID: Test
+--- !u!114 &2125455064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125455060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542a1106420eaec4c88dd38ae160e12d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
